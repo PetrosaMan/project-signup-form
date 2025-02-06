@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;    
+  }
+
+
+
+  @font-face {
+    font-family: 'Norse-Bold'; /* Name your font family */
+    src: url('./Norse-Bold.otf'); /* Locate the .ttf file within your directory*/
+  }  
+
+body {    
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;    
+}
+
+.container {
+    display: flex;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background-color: #007BFF;   
+    height: 650px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;    
+}
+
+.image > img {
+   width: 450px;
+   height: 650px;  
+}
+.overlay {      
+    position: absolute;
+    top: 40%;
+    left: 50%;    
+    transform: translate(-380%, -150%);    
+    opacity: 0.5;   
+}
+.overlay > img {   
+   width: 120px;
+   height: 120px;
+   background-color: #7878c4;
+   color: white;   
+   opacity: 0.8;           
+}
+
+span {
+    font-family: Norse-Bold;
+    display: inline-block;
+    position: absolute;
+    align-content: center;
+    top: 0;    
+    height: 120px;
+    background-color: #7878c4;
+    color: white;
+    text-align: center;
+    width: 120px;
+    font-size: 30px;
+}
+
+.container-2 {
+    display: flex;   
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 650px;
+    min-width: 500px;
+    padding-bottom: 0;
+    margin-bottom: 0;        
+}
+
+.header {  
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;   
+    font-family:Arial;   
+    font-size: 20px;
+    font-weight: 400;
+    background-color: lightgrey;      
+}
+
+.header > p {
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    gap: 1em;    
+}
+
+.form-container {
+    height: 380px;    
+    background-color: #f3f3f3;
+    flex-wrap: wrap;
+    gap: 1em;    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;    
+    width: 40%;
+}
+
+label {
+    margin: 10px;
+    font-family:Arial;   
+    font-size: 18px;
+}
+
+input {
+    margin-left: 10px;
+    height: 26px;
+    font-family: Arial;   
+    font-size: 17px;
+    border: 1px solid #E5E7EB;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+#password:invalid,
+#confirm-password:invalid {
+    border: 3px solid red;
+}
+
+input:focus {
+    border: 4px solid blue;
+    box-shadow: 5px 10px #ebe8e8;
+}
+
+.do-this {
+    font-family:Arial;   
+    font-size: 20px;
+    font-weight: 400;    
+    margin-left: 20px; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
+.button {
+    margin-left: 10px;
+    margin-top: 40px;
+    width: 160px;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    background-color: olivedrab;
+    overflow: visible;
+    position:relative;
+    top: 60px;
+}
+
+.login {         
+    background-color: lightgrey;
+    background-image: linear-gradient(#a8a1a1, #fffbfb);
+    font-size: 20px;
+    font-weight: 400;
+    height: 160px;
+    display: flex;     
+    align-items: center;
+    justify-content:flex-start;   
+    padding: 0;     
+}
+
+.login > p {
+    padding: 10px 30px 0px 10px;
+}
+
+a {
+    padding-top: 8px;
+}
+
